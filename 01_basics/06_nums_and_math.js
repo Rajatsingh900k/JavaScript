@@ -1,18 +1,18 @@
-const score = 400
+const score = 400;
 // console.log(score);
 
-const balance = new Number(100)
+const balance = new Number(100);
 // console.log(balance);
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+// console.log(balance.toString().length);//converting the balance into string
+// console.log(balance.toFixed(1));//used to prove precion value ex- 100.0
 
 const otherNumber = 123.8966
 
 // console.log(otherNumber.toPrecision(4));
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+// console.log(hundreds.toLocaleString('en-IN'));//add commas to give standards
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
@@ -20,7 +20,7 @@ const hundreds = 1000000
 // console.log(Math.abs(-4));
 // console.log(Math.round(4.6));
 // console.log(Math.ceil(4.2));
-// console.log(Math.floor(4.9));
+// console.log(Math.floor(4.9)); 
 // console.log(Math.min(4, 3, 6, 8));
 // console.log(Math.max(4, 3, 6, 8));
 

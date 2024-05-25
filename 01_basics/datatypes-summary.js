@@ -41,3 +41,29 @@ console.log(myFunction);
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//stack memory(primitive)
+//Heap memeory(Non-Primitvie)
+
+//primitive
+let userName="Rajat Singh"
+let newName=userName;
+
+newName="Prashant Dhawan";
+
+console.log(userName);
+console.log(newName);
+
+//Non-primitive
+let userOne={
+    email:"user@gmailcom",
+    upi:"user@ybl"
+}
+let userTwo=userOne;
+userTwo.upi="user@ibl";
+console.log(userOne);
+console.log(userTwo);
+ 
