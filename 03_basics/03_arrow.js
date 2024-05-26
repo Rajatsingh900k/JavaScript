@@ -1,3 +1,4 @@
+// this is used to refer to the current context(values).
 const user = {
     username: "hitesh",
     price: 999,
@@ -13,8 +14,10 @@ const user = {
 // user.username = "sam"
 // user.welcomeMessage()
 
-// console.log(this);
+// console.log(this);//when in node environment the this is refering to empty
+// in browser the global object is window
 
+//this can only work in objects it cannot work in funtions
 // function chai(){
 //     let username = "hitesh"
 //     console.log(this.username);
@@ -22,11 +25,13 @@ const user = {
 
 // chai()
 
+//Arrow funtions
 // const chai = function () {
 //     let username = "hitesh"
 //     console.log(this.username);
 // }
 
+//this is arrow funtion refers to empty object {}
 const chai =  () => {
     let username = "hitesh"
     console.log(this);
@@ -39,8 +44,8 @@ const chai =  () => {
 //     return num1 + num2
 // }
 
+//implicit return
 // const addTwo = (num1, num2) =>  num1 + num2
-
 // const addTwo = (num1, num2) => ( num1 + num2 )
 
 const addTwo = (num1, num2) => ({username: "hitesh"})

@@ -8,10 +8,12 @@ function sayMyName(){
     console.log("H");
 }
 
+//refernce of funtion=> sayMyName;
+//execution of funtion=> sayMyName();
+
 // sayMyName()
 
 // function addTwoNumbers(number1, number2){
-
 //     console.log(number1 + number2);
 // }
 
@@ -23,9 +25,10 @@ function addTwoNumbers(number1, number2){
 }
 
 const result = addTwoNumbers(3, 5)
-
+//when value is passed into the funtion then is it called arguements, when values are written int the funtion declaratin then it is called parameters
 // console.log("Result: ", result);
 
+// empty string and undefined are considered as false bool val in js
 
 function loginUserMessage(username = "sam"){
     if(!username){
@@ -38,6 +41,9 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 // console.log(loginUserMessage("hitesh"))
 
+//when we don't know the number of parameters...
+//... is called rest as well as spread operator it depends on its use case,
+// here it is used as wrapper.
 
 function calculateCartPrice(val1, val2, ...num1){
     return num1
@@ -50,6 +56,7 @@ const user = {
     prices: 199
 }
 
+
 function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
@@ -60,11 +67,10 @@ handleObject({
     price: 399
 })
 
-const myNewArray = [200, 400, 100, 600]
-
+const myNewArray = [200, 400, 100, 600];
 function returnSecondValue(getArray){
     return getArray[1]
-}
+};
 
 // console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
