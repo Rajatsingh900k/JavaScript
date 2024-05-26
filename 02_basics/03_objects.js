@@ -1,19 +1,20 @@
-// singleton
+// singleton:-if made using literals then not singleton other wise if made with constructor then always singleton
+//constructor method
 // Object.create
 
-// object literals
 
+// object literals
 const mySym = Symbol("key1")
 
 
 const JsUser = {
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",
+    [mySym]: "mykey1",//symbols syntax
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
-    isLoggedIn: false,
+    isLoggedIn: false, 
     lastLoginDays: ["Monday", "Saturday"]
 }
 
@@ -23,7 +24,7 @@ const JsUser = {
 // console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser)//freeze the propogation of control that object
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 

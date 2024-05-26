@@ -1,8 +1,9 @@
 // array
+//array in js can contain elements of different datatypes, unlike c/c++
 
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
-
+//copy operation of aray makes shallow copy.
 const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr[1]);
 
@@ -25,6 +26,10 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 
 // slice, splice
+//main difference between slice and splice is that
+//splice:- will change the original array i manipulated and the part is cutted
+//on the other hand in slice the original array is not manipulated.
+
 
 console.log("A ", myArr);
 
