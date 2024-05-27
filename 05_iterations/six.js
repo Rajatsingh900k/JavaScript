@@ -1,6 +1,6 @@
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
-
+//for-each donot return any value
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
 //     return item
@@ -8,8 +8,10 @@
 
 // console.log(values);
 
+
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+//filter used to return a value thatsatisfies a condition
 // const newNums = myNums.filter( (num) => {
 //     return num > 4
 // } )
