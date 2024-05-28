@@ -5,7 +5,7 @@ const myNums = [1, 2, 3]
 //     console.log(`acc: ${acc} and currval: ${currval}`);
 //     return acc + currval
 // }, 0)
-
+                                                        //this zero is initial value
 const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
 
 console.log(myTotal);
