@@ -22,15 +22,22 @@
     // document.getElementById('owl').onclick = function(){
     //     alert("owl clicked")
     // }
+    // document.getElementById('owl').addEventListener('Click',funtion(){
+    //  alert("owl clicked again");
+    // })
 
-     // attachEvent()
-    // jQuery - on
+    // Event object
+
 
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
-
+    
+    //Event progration:-
+    //1. (3rd parameter is true)event capturing(events propogate from parent to child) 
+    //2. (3rd para meter is false)event bubbling(events prpogate from innner child to upper)
+    
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
@@ -38,15 +45,16 @@
     // document.getElementById('owl').addEventListener('click', function(e){
     //     console.log("owl clicked");
     //     e.stopPropagation()
-    // }, false)
+    // }, false)//here if clicked on owl the the events will propogate, to stop this we used a stoppropogation() method
+
     
     // document.getElementById('google').addEventListener('click',function(e){
-    //     e.preventDefault();
+    //     e.preventDefault();//this fun will prevent the event bubble
     //     e.stopPropagation()
     //     console.log("google clicked");
     // }, false)
    
-    
+    // by default event propogation (3rd parameter is false).
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
