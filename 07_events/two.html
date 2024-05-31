@@ -1,3 +1,32 @@
+<!--
+    1. JavaScript
+        -it is synchronous(by default)
+        -it is single threaded(by default)
+    2. Execution context
+        -Execute one line of code at a time.
+        -console log->1
+        -console log->2
+        
+        -Call Stack         -Memory Stack
+
+    
+    ->Now Synchronous and Asynchronous Code
+    
+    -Blocking Code vs Non Blocking Code
+        1. Blocking Code:-
+            -Block the flow of Progress
+                        |
+                        V
+                Read File Sync
+        
+        2. Non Blocking Code
+            -Does not block execution
+                        |
+                        V
+                Read File Asyn
+
+Note:- Use of Blocking and Non-blocking code depends on the use case.
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +45,10 @@
     const changeText = function(){
         document.querySelector('h1').innerHTML = "best JS series"
     }
+    
+    //syntax of setTimrout(handler(reference):timerHandler,timeout?:number|undefined,...arguments:any[]):number
+    //handler is function without a name(it a kind of call back function)
+    //timeout is in ms.
 
     const changeMe = setTimeout(changeText, 2000)
 
