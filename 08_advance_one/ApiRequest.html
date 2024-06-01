@@ -1,3 +1,5 @@
+<!--API=> Application Programming Interface-->
+<!--xmlhttprequest-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,17 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: #212121;">
-    0	UNSENT	Client has been created. open() not called yet.
-1	OPENED	open() has been called.
-2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
-3	LOADING	Downloading; responseText holds partial data.
-4	DONE	The operation is complete.
+<body style="color: aliceblue; background-color: #212121;">
+<table>
+    <tr>
+        <td>Values</td>
+        <td>state</td>
+        <td>description</td>
+    </tr>
+    <tr>
+        <td>0</td>
+        <td>UNSENT</td>
+        <td>Client has been created. open() not called yet.</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>OPENED</td>
+        <td>open() has been called.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>HEADERS_RECEIVED</td>
+        <td>send() has been called, and headers and status are available.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>LOADING	Downloading;</td>
+        <td>responseText holds partial data.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>DONE</td>
+        <td>The operation is complete.</td>
+    </tr>
+</table>	
 </body>
 <script>
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+    //1. make object:-
     const xhr = new XMLHttpRequest();
+    
     xhr.open('GET', requestUrl)
+    //to track continuodly.
     xhr.onreadystatechange = function(){
         console.log(xhr.readyState);
         if (xhr.readyState === 4) {
@@ -24,6 +56,6 @@
             console.log(data.followers);
         }
     }
-    xhr.send();
+    xhr.send();//open() is call
 </script>
 </html>
