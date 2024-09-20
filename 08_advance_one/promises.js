@@ -42,7 +42,7 @@ const promiseFour = new Promise(function(resolve, reject){
     }, 1000)
 })
 
- promiseFour
+promiseFour
  .then((user) => {
     console.log(user);
     return user.username
