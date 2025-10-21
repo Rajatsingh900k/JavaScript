@@ -22,7 +22,7 @@ The playlist I'm following is created by [Author/Channel Hitesh Choudhary/Code a
 ## Project Structure
 
 The repository is organized as follows:
-
+```
 ├── 01-Introduction-to-JavaScript
 │ ├── script.js
 │ └── README.md
@@ -37,7 +37,7 @@ The repository is organized as follows:
 │ └── README.md
 ├── ...
 └── README.md
-
+```
 Each folder contains the code related to a specific topic covered in the playlist, along with a brief description of the concepts learned in that section.
 
 ## How to Use
